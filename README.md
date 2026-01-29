@@ -1,19 +1,36 @@
-# Go Web Application
+# 🚀 Saketh’s GitOps Cloud-Native Go Web App on AWS EKS
 
-This is a simple website written in Golang. It uses the `net/http` package to serve HTTP requests.
+This project demonstrates a **real-world GitOps CI/CD pipeline** for a cloud-native Go application deployed on **AWS EKS** using **Docker, Helm, GitHub Actions, and ArgoCD**.
 
-## Running the server
+Every code change automatically:
+- Builds & tests the application  
+- Performs static code analysis  
+- Builds and pushes a Docker image  
+- Updates the Helm chart  
+- Triggers ArgoCD to deploy to Kubernetes  
 
-To run the server, execute the following command:
+---
 
-```bash
-go run main.go
-```
+## 🧱 Architecture
 
-The server will start on port 8080. You can access it by navigating to `http://localhost:8080/courses` in your web browser.
+Developer → GitHub → GitHub Actions → DockerHub → Helm → ArgoCD → AWS EKS
 
-## Looks like this
+---
 
-![Website](static/images/golang-website.png)
+## 🛠 Tech Stack
+Go, Docker, GitHub Actions, Helm, ArgoCD, AWS EKS
 
+---
 
+## 📁 Project Structure
+- `.github/workflows` – CI/CD
+- `helm/` – Helm chart
+- `k8s/` – Kubernetes manifests
+- `static/` – HTML pages
+- `main.go` – Go web server
+
+---
+
+## 🚀 Author
+Saketh Reddy Sadu
+GitHub: https://github.com/Saketh2406
